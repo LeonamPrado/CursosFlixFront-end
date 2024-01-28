@@ -38,8 +38,8 @@ if (course.length > 4) {
                 drag: course.length > 2 ? true : false,
               },
               640: {
-                perPage: 300,
-                width: 1,
+                perPage: 1,
+                width: 300,
                 arrows: course.length > 1 ? true : false,
                 drag: course.length > 1 ? true : false,
               },
