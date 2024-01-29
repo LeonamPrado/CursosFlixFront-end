@@ -90,7 +90,6 @@ const CoursePage = function () {
         <Container className={styles.courseInfo}>
           <p className={styles.courseTitle}>
             {course?.name}
-            {course?.episodes?.length}
           </p>
           <p className={styles.courseDescription}>{course?.synopsis}</p>
           <Button
