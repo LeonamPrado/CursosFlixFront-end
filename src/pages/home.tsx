@@ -26,7 +26,7 @@ if (loading) {
   return (
     <>
 			<Head>
-        <title>CursosFlix - Registro</title>
+        <title>CursosFlix - Home</title>
         <link rel="shortcut icon" href="/homeNoAuth/logoCta.png" type="image/x-icon" />
       </Head>
       <main>

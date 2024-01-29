@@ -1,16 +1,15 @@
 @import "./colors.module.scss";
-.main{
-  display: flex;
-  flex-direction: column;
-}
-.gridContainer{
-  flex: 1 0 auto;
-  padding: 80px 0;
+.header {
+  background-color: black;
 }
 .form {
   border: 1px solid $darkGray;
   padding: 20px 0px;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .formName {
   display: flex;
@@ -19,24 +18,23 @@
   gap: 10px;
   width: 80%;
   margin: 20px auto;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .nameAbbreviation {
   font-size: 40px;
   font-weight: bold;
-  min-width: 70px;
   min-height: 70px;
-  border-radius: 50%;
+  min-width: 70px;
   background-color: white;
   color: black;
+  border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .userName {
   font-size: 30px;
   font-weight: bold;
-  word-break: break-word;
 }
 .memberTime {
   display: flex;
@@ -46,7 +44,7 @@
 .memberTimeImg {
   width: 20px;
 }
-.memberTimeText {
+.memberText {
   font-size: 14px;
   color: $lightGray;
 }
@@ -56,30 +54,27 @@
 }
 .inputFlexDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
 .inputFlex {
   width: 250px;
+  text-transform: uppercase;
   background-color: transparent;
   border: 1px solid $darkGray;
   color: white;
-  transition: 0.3s;
-	text-transform: uppercase;
   &::placeholder {
     color: $lightGray;
   }
   &:focus {
     box-shadow: none;
     border-color: $lightRed;
-    background-color: transparent;
     color: white;
+    background-color: transparent;
   }
 }
-.inputNormalDiv{
+.inputNormalDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,33 +83,52 @@
 }
 .input {
   @extend .inputFlex;
-	text-transform: lowercase;
+  text-transform: lowercase;
   width: 550px;
 }
 .formBtn {
-  width: 170px;
-  height: 40px;
   border-color: $lightRed;
   text-align: center;
   color: white;
   font-weight: bold;
   font-size: 15px;
   padding: 6px 20px;
-  transition: 0.4s;
+  display: block;
+  margin: 10px auto;
   &:hover {
     border-color: $darkRed;
     background-color: transparent;
     color: $lightGray;
   }
-	&:focus {
-    box-shadow: none;
-    outline: none;
-  }
 }
 .title {
   font-size: 45px;
   font-weight: bold;
-  padding: 0px 0px 50px 0px;
+  padding-bottom: 50px;
+}
+.renderForm {
+  display: block;
+  width: 200px;
+  border: 1px solid $darkGray;
+  background-color: transparent;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 14px 0px;
+  &:hover {
+    background-color: transparent;
+    color: $lightRed;
+  }
+  &:active {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.footer {
+  background-color: black;
 }
 .renderFormBtn {
   display: block;
@@ -122,27 +136,13 @@
   border: 1px solid $darkGray;
   color: white;
   font-weight: bold;
+  margin: 0 auto;
 	padding: 14px 0px;
-  margin-bottom: 5px;
   &:hover {
     background-color: transparent;
     border-color: $lightRed;
     color: $lightGray;
   }
-  &:active{
-    background-color: transparent ;
-    box-shadow: none;
-  } 
-  &:focus{
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-.header {
-  background-color: black;
-}
-.footer {
-  background-color: black;
 }
 @media (max-width: 991px) {
   .title {
@@ -155,36 +155,26 @@
 }
 @media (max-width: 767px) {
   .inputFlexDiv {
-    gap: 30px;
+    gap: 20px;
   }
   .inputFlex {
     width: 400px;
   }
-  .input {
-    width: 400px;
-  }
 }
-@media (max-width: 527px) {
+@media (max-width: 460px) {
   .title {
-    font-size: 35px;
-  }
-  .formName {
-    width: 95%;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   .nameAbbreviation {
     font-size: 30px;
-    min-width: 60px;
     min-height: 60px;
+    min-width: 60px;
   }
   .userName {
-    font-size: 30px;
+    font-size: 25px;
   }
-}
-@media (max-width: 435px) {
   .inputFlex {
-    width: 100%;
-  }
-  .input {
     width: 100%;
   }
 }

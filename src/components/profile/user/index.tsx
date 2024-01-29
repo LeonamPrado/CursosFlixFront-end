@@ -138,7 +138,8 @@ const UserForm = function () {
               }}
             />
           </FormGroup>
-
+              </div>
+              <div>
           <Button type="submit" className={styles.formBtn} outline>
             Salvar Alterações
           </Button>
