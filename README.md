@@ -9,6 +9,7 @@
 <img align="left" alt="Postgresql" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
 
 <br>
+<br>
 
 ### 🔗 Link for the Applications
-https://cursoflixfront.vercel.app
+  https://cursoflixfront.vercel.app
